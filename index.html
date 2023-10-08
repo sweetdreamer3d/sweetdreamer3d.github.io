@@ -85,21 +85,21 @@
         <div class="w-container grey_container">
             <h2 class="grey-heading_nerf">Abstract</h2>
             <p class="paragraph-3 nerf_text nerf_results_text">
-                Lifting 2D observations in pre-trained diffusion models to a 3D world for text-to-
-                3D is inherently ambiguous. 2D diffusion models solely learn view-agnostic
+                Lifting 2D observations in pre-trained diffusion models to a 3D world for text-to-3D 
+		is inherently ambiguous. 2D diffusion models solely learn view-agnostic
                 priors and thus lack 3D knowledge during the lifting, leading to the multi-view
                 inconsistency problem. Our key finding reveals that this problem primarily stems
                 from geometric inconsistency, and addressing ambiguously placed geometries
                 substantially mitigates the issue in the final outcomes. Therefore, we focus on
-                improving the geometric consistency via enforcing the 2D geometric priors in dif
-                fusion models act in a way that aligns with well-defined 3D geometries during the
+                improving the geometric consistency via enforcing the 2D geometric priors in diffusion 
+		models act in a way that aligns with well-defined 3D geometries during the
                 lifting, addressing the vast majority of the problem. This is realized by fine-tuning
                 the 2D diffusion to be viewpoint-aware and to produce view-specific geometric
                 maps of canonically oriented objects as in 3D datasets. Particularly, only coarse
                 3D geometries are used for aligning. This “coarse” alignment not only enables
                 the generation of geometries without multi-view inconsistency but also retains the
-                ability in 2D diffusion models to generate high-quality geometries of arbitrary ob
-                jects unseen in 3D datasets. Furthermore, our <b style="color: rgb(124, 196, 245);">Aligned Geometric Priors (AGP)</b> are
+                ability in 2D diffusion models to generate high-quality geometries of arbitrary objects 
+		unseen in 3D datasets. Furthermore, our <b style="color: rgb(124, 196, 245);">Aligned Geometric Priors (AGP)</b> are
                 generic and can be seamlessly integrated into various state-of-the-art pipelines,
                 obtaining high generalizability in terms of unseen geometric structures and visual
                 appearance while greatly alleviating multi-view inconsistency issues, and hence
